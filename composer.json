@@ -16,6 +16,12 @@
 		"email": "filip@prochazka.su",
 		"issues": "https://github.com/kdyby/doctrine/issues"
 	},
+	"repositories" : [
+		{
+			"type" : "vcs",
+			"url" : "https://github.com/LidskaSila/doctrine2.git"
+		}
+	],
 	"require": {
 		"php": ">=5.4",
 		"nette/di": "~2.3@dev",
@@ -23,7 +29,7 @@
 		"nette/utils": "~2.3@dev",
 		"nette/robot-loader": "~2.3@dev",
 
-		"doctrine/orm": "~2.5",
+		"doctrine/orm": "dev-afterflush-event",
 		"doctrine/dbal": "~2.5",
 
 		"kdyby/console": "~2.5@dev",
