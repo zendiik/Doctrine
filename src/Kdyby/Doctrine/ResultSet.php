@@ -43,8 +43,9 @@ use Nette\Utils\Paginator as UIPaginator;
  *
  * @author Filip Procházka <filip@prochazka.su>
  */
-class ResultSet extends Nette\Object implements \Countable, \IteratorAggregate
+class ResultSet implements \Countable, \IteratorAggregate
 {
+	use Nette\SmartObject;
 
 	/**
 	 * @var int

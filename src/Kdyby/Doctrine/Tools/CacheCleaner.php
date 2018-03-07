@@ -21,8 +21,9 @@ use Nette;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class CacheCleaner extends Nette\Object
+class CacheCleaner
 {
+	use Nette\SmartObject;
 
 	/**
 	 * @var \Doctrine\ORM\EntityManager

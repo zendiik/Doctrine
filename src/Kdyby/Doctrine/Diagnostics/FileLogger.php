@@ -20,8 +20,9 @@ use Tracy\Debugger;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class FileLogger extends Nette\Object implements SQLLogger
+class FileLogger implements SQLLogger
 {
+	use Nette\SmartObject;
 
 	/**
 	 * @var string

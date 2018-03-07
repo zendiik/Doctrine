@@ -18,8 +18,9 @@ use Nette;
 /**
  * @author Martin Štekl <martin.stekl@gmail.com>
  */
-class SimpleParameterFormatter extends Nette\Object
+class SimpleParameterFormatter
 {
+	use Nette\SmartObject;
 
 	/**
 	 * @param mixed $param
