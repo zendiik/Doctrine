@@ -25,8 +25,9 @@ use Nette\Utils\Callback;
  *
  * @author Filip Procházka <filip@prochazka.su>
  */
-class DqlSelection extends Nette\Object implements \IteratorAggregate
+class DqlSelection implements \IteratorAggregate
 {
+	use Nette\SmartObject;
 
 	/* The query types. */
 	const SELECT = 0;

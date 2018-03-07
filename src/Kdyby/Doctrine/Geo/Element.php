@@ -19,8 +19,9 @@ use Nette\Utils\Strings;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class Element extends Nette\Object
+class Element
 {
+	use Nette\SmartObject;
 
 	const POINT = 'POINT';
 	const LINE_STRING = 'LINESTRING';

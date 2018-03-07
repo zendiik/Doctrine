@@ -7,8 +7,9 @@ use Nette;
 
 
 
-class EntityListenerResolver extends Nette\Object implements \Doctrine\ORM\Mapping\EntityListenerResolver
+class EntityListenerResolver implements \Doctrine\ORM\Mapping\EntityListenerResolver
 {
+	use Nette\SmartObject;
 
 	/**
 	 * @var \Nette\DI\Container

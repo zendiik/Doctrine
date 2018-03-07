@@ -22,8 +22,9 @@ use Nette;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class Condition extends Nette\Object
+class Condition
 {
+	use Nette\SmartObject;
 
 	const COND_AND = 'Doctrine\ORM\Query\Expr\Andx';
 	const COND_OR = 'Doctrine\ORM\Query\Expr\Orx';

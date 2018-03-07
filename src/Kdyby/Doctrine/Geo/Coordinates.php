@@ -18,8 +18,9 @@ use Nette;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class Coordinates extends Nette\Object
+class Coordinates
 {
+	use Nette\SmartObject;
 
 	/**
 	 * @var float

@@ -20,8 +20,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class ColoredSqlOutput extends Nette\Object implements OutputInterface
+class ColoredSqlOutput implements OutputInterface
 {
+	use Nette\SmartObject;
 
 	/**
 	 * @var \Symfony\Component\Console\Output\OutputInterface
